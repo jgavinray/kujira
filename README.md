@@ -1,5 +1,9 @@
 # Kujira
 
+[What does Jira mean](https://confluence.atlassian.com/pages/viewpage.action?pageId=223219957)?
+The name Kujira was chosen in jest because it means `whale`. When in reality it is intended to be very small and
+lightweight.
+
 ### What it is
 
 Command Line Interface application that is used to retrieve [Jira](https://jira.atlassian.com/) details without using
