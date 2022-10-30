@@ -4,10 +4,11 @@ extern crate serde_derive;
 use std::fs;
 use serde_json::Result;
 
-#[derive(Deserialize, Serialize)]
+#[derive(Deserialize)]
 struct Config {
-    jiraUrl: String,
-    jiraToken: String,
+    jira_url: String,
+    jira_token: String,
+    jira_project: String,
 }
 
 fn main() -> Result<()> {
@@ -17,7 +18,9 @@ fn main() -> Result<()> {
 
     let config: Config = serde_json::from_str(&data)?;
 
-    println!("{:#?}", config.jiraUrl);
+    println!("{:#?}", config.jira_url);
+    println!("{:#?}", config.jira_token);
+    println!("{:#?}", config.jira_project);
 
     Ok(())
 }
